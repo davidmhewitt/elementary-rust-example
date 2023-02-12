@@ -1,0 +1,11 @@
+[package]
+name = "elementary-rust-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+glib = "0.17.0"
+granite = { version = "0.1.0", package = "granite-rs" }
+gtk = { version = "0.6.0", package = "gtk4", features = ["v4_8"] }
