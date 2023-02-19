@@ -32,7 +32,7 @@ jobs:
       - name: Install Rust SDK extension
         run: |
           flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-          flatpak install --arch=${{matrix.arch}} org.freedesktop.Sdk.Extension.rust-stable
+          flatpak install -y --arch=${{matrix.arch}} org.freedesktop.Sdk.Extension.rust-stable//22.08
 
       - name: Set up QEMU for aarch64 emulation
         if: ${{ matrix.arch != 'x86_64' }}
