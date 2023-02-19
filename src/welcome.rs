@@ -54,7 +54,7 @@ mod imp {
 
             let source_button = welcome
                 .append_button(
-                    &gio::ThemedIcon::new("help-contents"),
+                    &gio::ThemedIcon::new("applications-development"),
                     &gettext("Info"),
                     &gettext("Learn more about this application"),
                 )
@@ -63,14 +63,14 @@ mod imp {
             source_button.connect_clicked(|_| {
                 gtk::show_uri(
                     gtk::Window::NONE,
-                    "https://github.com/davidmhewitt/granite-rs",
+                    "https://github.com/davidmhewitt/elementary-rust-example",
                     gtk::gdk::CURRENT_TIME,
                 );
             });
 
             let docs_button = welcome
                 .append_button(
-                    &gio::ThemedIcon::new("help-browser"),
+                    &gio::ThemedIcon::new("help-contents"),
                     &gettext("Docs"),
                     &gettext("Rust docs for the Granite crate"),
                 )
