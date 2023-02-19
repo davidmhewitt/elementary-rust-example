@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=elementary-rust-example
+Exec=elementary-rust-example
+Icon=io.github.davidmhewitt.ElementaryRustExample
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

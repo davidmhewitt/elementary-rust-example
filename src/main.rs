@@ -1,44 +1,55 @@
-mod headerbar;
+/* MIT License
+ *
+ * Copyright (c) 2023 David Hewitt
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+mod application;
+mod config;
 mod welcome;
+mod window;
 
-use granite::traits::SettingsExt;
-use gtk::glib::clone;
+use self::application::ElementaryRustExampleApplication;
+use self::window::ElementaryRustExampleWindow;
+
+use config::{APP_ID, GETTEXT_PACKAGE, LOCALEDIR, PKGDATADIR};
+use gettextrs::{bind_textdomain_codeset, bindtextdomain, textdomain};
+use gtk::gio;
 use gtk::prelude::*;
-use gtk::{Application, ApplicationWindow};
-
-const APP_ID: &str = "io.github.davidmhewitt.elementary-rust-example";
 
 fn main() {
-    let app = Application::builder().application_id(APP_ID).build();
-    app.connect_activate(build_ui);
-    app.run();
-}
+    // Set up gettext translations
+    bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR).expect("Unable to bind the text domain");
+    bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8")
+        .expect("Unable to set the text domain encoding");
+    textdomain(GETTEXT_PACKAGE).expect("Unable to switch to the text domain");
 
-fn build_ui(app: &Application) {
-    let gtk_settings = gtk::Settings::default().unwrap();
+    // Load resources
+    let resources =
+        gio::Resource::load(PKGDATADIR.to_owned() + "/elementary-rust-example.gresource")
+            .expect("Could not load resources");
+    gio::resources_register(&resources);
 
-    let granite_settings = granite::Settings::default().unwrap();
-    gtk_settings.set_gtk_application_prefer_dark_theme(
-        granite_settings.prefers_color_scheme() == granite::SettingsColorScheme::Dark,
-    );
+    let app = ElementaryRustExampleApplication::new(APP_ID, &gio::ApplicationFlags::empty());
 
-    let welcome = welcome::WelcomeView::build();
-
-    let window = ApplicationWindow::builder()
-        .application(app)
-        .title("Rust Template")
-        .child(&welcome)
-        .build();
-
-    window.set_titlebar(Some(&headerbar::HeaderBar::build()));
-
-    window.present();
-
-    granite_settings.connect_prefers_color_scheme_notify(
-        clone!(@weak gtk_settings => move |granite_settings| {
-            gtk_settings.set_gtk_application_prefer_dark_theme(
-                granite_settings.prefers_color_scheme() == granite::SettingsColorScheme::Dark,
-            );
-        }),
-    );
+    std::process::exit(app.run().value());
 }

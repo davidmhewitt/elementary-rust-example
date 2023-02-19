@@ -1,0 +1,26 @@
+# Japanese translations for extra package.
+# Copyright (C) 2023 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-18 15:29+0000\n"
+"PO-Revision-Date: 2023-02-18 15:29+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: data/io.github.davidmhewitt.ElementaryRustExample.desktop.in:3
+msgid "elementary-rust-example"
+msgstr ""
+
+#: data/io.github.davidmhewitt.ElementaryRustExample.appdata.xml.in:7
+msgid "No description"
+msgstr ""

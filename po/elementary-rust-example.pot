@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the elementary-rust-example package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: elementary-rust-example\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-19 10:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/welcome.rs:52
+msgid "Welcome"
+msgstr ""
+
+#: src/welcome.rs:58
+msgid "Info"
+msgstr ""
+
+#: src/welcome.rs:59
+msgid "Learn more about this application"
+msgstr ""
+
+#: src/welcome.rs:74
+msgid "Docs"
+msgstr ""
+
+#: src/welcome.rs:75
+msgid "Rust docs for the Granite crate"
+msgstr ""
+
+#: src/window.rs:62
+msgid "Light Background"
+msgstr ""
+
+#: src/window.rs:63
+msgid "Dark Background"
+msgstr ""
