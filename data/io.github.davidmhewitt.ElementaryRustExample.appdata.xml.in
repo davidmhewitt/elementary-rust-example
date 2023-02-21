@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>io.github.davidmhewitt.ElementaryRustExample.desktop</id>
-	<metadata_license>CC0-1.0</metadata_license>
-	<project_license>MIT</project_license>
-	<description>
-	  <p>No description</p>
-	</description>
+  <id>io.github.davidmhewitt.ElementaryRustExample.desktop</id>
+  <name>Elementary Rust Example</name>
+  <summary>Sample project for how to build elementary projects in Rust</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <description>
+    <p>No description</p>
+  </description>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.1.0" date="2023-02-21">
+      <description>
+        <p>Initial Release</p>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/davidmhewitt/elementary-rust-example/raw/main/data/screenshots/light.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/davidmhewitt/elementary-rust-example</url>
 </component>
