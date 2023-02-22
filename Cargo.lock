@@ -459,9 +459,9 @@ dependencies = [
 
 [[package]]
 name = "gtk4-sys"
-version = "0.6.0"
+version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e13cf3bc9559f71963c957eb639060b643e1276ae47b892ef6091d5bc15c3e1b"
+checksum = "65463dc801460e498d5e7ffa6e9ae2cfbed7d05fabd1ca5a8d024adbc89eeda6"
 dependencies = [
  "cairo-sys-rs",
  "gdk-pixbuf-sys",
