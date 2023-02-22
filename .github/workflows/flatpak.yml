@@ -4,11 +4,15 @@ name: CI
 
 on:
   push:
+    paths: 
+      - '**.json'
   pull_request:
     types:
       - opened
       - reopened
       - synchronize
+    paths: 
+      - '**.json'
 
 jobs:
   flatpak:
