@@ -27,6 +27,8 @@ jobs:
         toolchain: stable
         components: rustfmt, clippy
     - name: Build
-      run: cargo build --verbose
+      run: |
+        meson build
+        meson compile -C builddir
     - name: Run tests
-      run: cargo test --verbose
+      run: meson test -C builddir
