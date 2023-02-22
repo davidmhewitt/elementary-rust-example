@@ -4,6 +4,10 @@ on:
   push:
     paths:
       - 'Cargo.lock'
+      
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   build:
