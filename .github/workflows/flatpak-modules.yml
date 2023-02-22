@@ -1,0 +1,30 @@
+name: Update Flatpak Modules
+
+on:
+  push:
+    paths:
+      - 'Cargo.lock'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        path: elementary-rust-example
+        
+    - uses: actions/checkout@v3
+      with:
+        repository: flatpak/flatpak-builder-tools
+        path: tools
+        
+    - name: Update modules
+      run: |
+        python3 tools/cargo/flatpak-cargo-generator.py -o elementary-rust-example/cargo-sources.json elementary-rust-example/Cargo.lock
+        
+    - uses: peter-evans/create-pull-request@v4
+      with:
+        path: elementary-rust-example
+        commit-message: Automated update of cargo-sources.json
+        title: Automated update of cargo-sources.json
