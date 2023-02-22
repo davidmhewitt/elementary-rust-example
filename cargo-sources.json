@@ -444,14 +444,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gsk4-sys/gsk4-sys-0.6.0.crate",
-        "sha256": "096cb59175b0915ebf69c05a45263c0c989bd8537b8f2169912d0de644ba6a76",
-        "dest": "cargo/vendor/gsk4-sys-0.6.0"
+        "url": "https://static.crates.io/crates/gsk4-sys/gsk4-sys-0.6.2.crate",
+        "sha256": "5a445ae1e50cbf181a1d5c61b920a7e7e8657b96e0ecdbbf8911a86fad462a32",
+        "dest": "cargo/vendor/gsk4-sys-0.6.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"096cb59175b0915ebf69c05a45263c0c989bd8537b8f2169912d0de644ba6a76\", \"files\": {}}",
-        "dest": "cargo/vendor/gsk4-sys-0.6.0",
+        "contents": "{\"package\": \"5a445ae1e50cbf181a1d5c61b920a7e7e8657b96e0ecdbbf8911a86fad462a32\", \"files\": {}}",
+        "dest": "cargo/vendor/gsk4-sys-0.6.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
