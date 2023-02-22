@@ -390,9 +390,9 @@ dependencies = [
 
 [[package]]
 name = "gsk4"
-version = "0.6.0"
+version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "432f981e4ea9f0739a5731d8a649acb794a3a729d2254e559ce7d613b17caf95"
+checksum = "2fa9cd285a72a95124b65c069a9cb1b8fb8e310be71783404c39fccf3bf7774c"
 dependencies = [
  "bitflags",
  "cairo-rs",
