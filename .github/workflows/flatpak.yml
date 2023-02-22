@@ -4,16 +4,18 @@ name: CI
 
 on:
   push:
+    branches: [ 'main' ]
     paths: 
       - '**.json'
   pull_request:
+    branches: [ 'main' ]
+    paths: 
+      - '**.json'
     types:
       - opened
       - reopened
       - synchronize
-    paths: 
-      - '**.json'
-
+      
 jobs:
   flatpak:
     name: Flatpak
