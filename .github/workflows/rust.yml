@@ -28,7 +28,7 @@ jobs:
         components: rustfmt, clippy
     - name: Build
       run: |
-        meson build
+        meson builddir
         meson compile -C builddir
     - name: Run tests
       run: meson test -C builddir
