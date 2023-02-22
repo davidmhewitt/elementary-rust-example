@@ -18,6 +18,9 @@ jobs:
       
     steps:
     - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        sudo apt-get install -y curl
     - name: Install stable rust
       uses: actions-rs/toolchain@v1
       with:
