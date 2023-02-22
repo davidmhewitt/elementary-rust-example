@@ -262,14 +262,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gdk4-sys/gdk4-sys-0.6.0.crate",
-        "sha256": "f4993c019bf03d18137c00ddafb2b23e73f7cbb45ae244f52af2542a3f4a9452",
-        "dest": "cargo/vendor/gdk4-sys-0.6.0"
+        "url": "https://static.crates.io/crates/gdk4-sys/gdk4-sys-0.6.2.crate",
+        "sha256": "14f0fb00507af1e9299681dd09965f720e2b5ea95536d49a5681e8994ef10c7a",
+        "dest": "cargo/vendor/gdk4-sys-0.6.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f4993c019bf03d18137c00ddafb2b23e73f7cbb45ae244f52af2542a3f4a9452\", \"files\": {}}",
-        "dest": "cargo/vendor/gdk4-sys-0.6.0",
+        "contents": "{\"package\": \"14f0fb00507af1e9299681dd09965f720e2b5ea95536d49a5681e8994ef10c7a\", \"files\": {}}",
+        "dest": "cargo/vendor/gdk4-sys-0.6.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -301,14 +301,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gio/gio-0.17.0.crate",
-        "sha256": "1981edf8679d2f2c8ec3120015867f45aa0a1c2d5e3e129ca2f7dda174d3d2a9",
-        "dest": "cargo/vendor/gio-0.17.0"
+        "url": "https://static.crates.io/crates/gio/gio-0.17.2.crate",
+        "sha256": "65acfc24267314eee46f49e0a531e08fd6c3025040d1cfb4a7cd8e41c5e06116",
+        "dest": "cargo/vendor/gio-0.17.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"1981edf8679d2f2c8ec3120015867f45aa0a1c2d5e3e129ca2f7dda174d3d2a9\", \"files\": {}}",
-        "dest": "cargo/vendor/gio-0.17.0",
+        "contents": "{\"package\": \"65acfc24267314eee46f49e0a531e08fd6c3025040d1cfb4a7cd8e41c5e06116\", \"files\": {}}",
+        "dest": "cargo/vendor/gio-0.17.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -327,14 +327,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/glib/glib-0.17.1.crate",
-        "sha256": "91b429154ec5943185aeeaf79e646297567b6a056965f1e89da2657a0e23255b",
-        "dest": "cargo/vendor/glib-0.17.1"
+        "url": "https://static.crates.io/crates/glib/glib-0.17.2.crate",
+        "sha256": "a78b6a0901e258cb03c761ca94c84d519427ede489cae12cd5ba0d7d584e69e9",
+        "dest": "cargo/vendor/glib-0.17.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"91b429154ec5943185aeeaf79e646297567b6a056965f1e89da2657a0e23255b\", \"files\": {}}",
-        "dest": "cargo/vendor/glib-0.17.1",
+        "contents": "{\"package\": \"a78b6a0901e258cb03c761ca94c84d519427ede489cae12cd5ba0d7d584e69e9\", \"files\": {}}",
+        "dest": "cargo/vendor/glib-0.17.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -353,14 +353,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/glib-sys/glib-sys-0.17.0.crate",
-        "sha256": "9ddcb73fa8236277bedadaaadb76aef49c85d66340f83bece244f46c2d4f0e01",
-        "dest": "cargo/vendor/glib-sys-0.17.0"
+        "url": "https://static.crates.io/crates/glib-sys/glib-sys-0.17.2.crate",
+        "sha256": "72a0985cf568e18cf63b443c9a14f4bdaa947fed7437476000dba84926a20b25",
+        "dest": "cargo/vendor/glib-sys-0.17.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9ddcb73fa8236277bedadaaadb76aef49c85d66340f83bece244f46c2d4f0e01\", \"files\": {}}",
-        "dest": "cargo/vendor/glib-sys-0.17.0",
+        "contents": "{\"package\": \"72a0985cf568e18cf63b443c9a14f4bdaa947fed7437476000dba84926a20b25\", \"files\": {}}",
+        "dest": "cargo/vendor/glib-sys-0.17.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -431,14 +431,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gsk4/gsk4-0.6.0.crate",
-        "sha256": "432f981e4ea9f0739a5731d8a649acb794a3a729d2254e559ce7d613b17caf95",
-        "dest": "cargo/vendor/gsk4-0.6.0"
+        "url": "https://static.crates.io/crates/gsk4/gsk4-0.6.2.crate",
+        "sha256": "2fa9cd285a72a95124b65c069a9cb1b8fb8e310be71783404c39fccf3bf7774c",
+        "dest": "cargo/vendor/gsk4-0.6.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"432f981e4ea9f0739a5731d8a649acb794a3a729d2254e559ce7d613b17caf95\", \"files\": {}}",
-        "dest": "cargo/vendor/gsk4-0.6.0",
+        "contents": "{\"package\": \"2fa9cd285a72a95124b65c069a9cb1b8fb8e310be71783404c39fccf3bf7774c\", \"files\": {}}",
+        "dest": "cargo/vendor/gsk4-0.6.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -457,14 +457,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gtk4/gtk4-0.6.1.crate",
-        "sha256": "73421200ad9c3919d0720779b345b05d31a6ce9998e74fc27012f12580822e46",
-        "dest": "cargo/vendor/gtk4-0.6.1"
+        "url": "https://static.crates.io/crates/gtk4/gtk4-0.6.2.crate",
+        "sha256": "e47dca53cb1a8ae3006e869b5711ae7370180db537f6d98e3bcaf23fabfd911f",
+        "dest": "cargo/vendor/gtk4-0.6.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"73421200ad9c3919d0720779b345b05d31a6ce9998e74fc27012f12580822e46\", \"files\": {}}",
-        "dest": "cargo/vendor/gtk4-0.6.1",
+        "contents": "{\"package\": \"e47dca53cb1a8ae3006e869b5711ae7370180db537f6d98e3bcaf23fabfd911f\", \"files\": {}}",
+        "dest": "cargo/vendor/gtk4-0.6.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -483,14 +483,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gtk4-sys/gtk4-sys-0.6.0.crate",
-        "sha256": "e13cf3bc9559f71963c957eb639060b643e1276ae47b892ef6091d5bc15c3e1b",
-        "dest": "cargo/vendor/gtk4-sys-0.6.0"
+        "url": "https://static.crates.io/crates/gtk4-sys/gtk4-sys-0.6.2.crate",
+        "sha256": "65463dc801460e498d5e7ffa6e9ae2cfbed7d05fabd1ca5a8d024adbc89eeda6",
+        "dest": "cargo/vendor/gtk4-sys-0.6.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"e13cf3bc9559f71963c957eb639060b643e1276ae47b892ef6091d5bc15c3e1b\", \"files\": {}}",
-        "dest": "cargo/vendor/gtk4-sys-0.6.0",
+        "contents": "{\"package\": \"65463dc801460e498d5e7ffa6e9ae2cfbed7d05fabd1ca5a8d024adbc89eeda6\", \"files\": {}}",
+        "dest": "cargo/vendor/gtk4-sys-0.6.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
