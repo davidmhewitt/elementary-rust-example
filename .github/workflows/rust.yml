@@ -21,6 +21,7 @@ jobs:
     - name: Install stable rust
       uses: actions-rs/toolchain@v1
       with:
+        toolchain: stable
         components: rustfmt, clippy
     - name: Build
       run: cargo build --verbose
