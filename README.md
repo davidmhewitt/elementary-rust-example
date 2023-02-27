@@ -59,3 +59,8 @@ This repository is set up with a number of actions to help the development proce
 
 Please open [an issue](https://github.com/davidmhewitt/elementary-rust-example/issues) if you find any problems or want to get support.
 
+## 📔 Other Resources
+
+* [GUI development with Rust and GTK 4](https://gtk-rs.org/gtk4-rs/stable/latest/book/)
+* [Granite Documentation](https://valadoc.org/granite-7/Granite.html) (for Vala, but still useful and relevant)
+* [granite-rs examples](https://github.com/davidmhewitt/granite-rs/tree/main/examples/src) (Granite demo partially re-implemented in Rust)
