@@ -45,7 +45,7 @@ jobs:
         components: rustfmt
     - name: Touch empty config file
       run: |
-        touch src/config.rs
+        echo -e "\n" >> src/config.rs
     - name: Run cargo fmt
       uses: actions-rs/cargo@v1
       with:
