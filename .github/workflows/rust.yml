@@ -48,7 +48,7 @@ jobs:
         toolchain: stable
         profile: minimal
         components: clippy, rustfmt
-    - name: Build
+    - name: Generate config.rs
       run: |
         meson builddir
     - name: Run cargo fmt

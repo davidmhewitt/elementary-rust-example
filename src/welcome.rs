@@ -76,7 +76,7 @@ mod imp {
                 )
                 .expect("Unable to construct button in welcome view");
 
-                docs_button.connect_clicked(|_| {
+            docs_button.connect_clicked(|_| {
                 gtk::show_uri(
                     gtk::Window::NONE,
                     "https://docs.rs/granite-rs/latest/granite/",
