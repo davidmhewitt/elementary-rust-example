@@ -49,7 +49,7 @@ mod imp {
             let obj = self.obj();
 
             let welcome = granite::Placeholder::builder()
-                .title(&gettext("Welcome"))
+                .title(gettext("Welcome"))
                 .build();
 
             let source_button = welcome
@@ -102,5 +102,11 @@ impl WelcomeView {
             .property("orientation", gtk::Orientation::Vertical)
             .property("spacing", 0)
             .build()
+    }
+}
+
+impl Default for WelcomeView {
+    fn default() -> Self {
+        Self::new()
     }
 }

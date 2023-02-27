@@ -59,8 +59,8 @@ mod imp {
             let mode_switch = granite::ModeSwitch::builder()
                 .primary_icon_name("display-brightness-symbolic")
                 .secondary_icon_name("weather-clear-night-symbolic")
-                .primary_icon_tooltip_text(&gettext("Light Background"))
-                .secondary_icon_tooltip_text(&gettext("Dark Background"))
+                .primary_icon_tooltip_text(gettext("Light Background"))
+                .secondary_icon_tooltip_text(gettext("Dark Background"))
                 .valign(gtk::Align::Center)
                 .build();
 
