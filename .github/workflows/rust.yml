@@ -11,11 +11,10 @@ env:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     container:
       image: elementary/docker:stable
-      
+
     steps:
     - uses: actions/checkout@v3
     - name: Install dependencies
@@ -25,10 +24,42 @@ jobs:
       uses: actions-rs/toolchain@v1
       with:
         toolchain: stable
-        components: rustfmt, clippy
+        profile: minimal
     - name: Build
       run: |
         meson builddir
         meson compile -C builddir
     - name: Run tests
       run: meson test -C builddir
+
+  lints:
+    runs-on: ubuntu-latest
+    container:
+      image: elementary/docker:stable
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        apt-get update && apt-get install -y curl libgranite-7-dev
+    - name: Install stable rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        profile: minimal
+        components: clippy
+    - name: Build
+      run: |
+        meson builddir
+    - name: Run cargo fmt
+      uses: actions-rs/cargo@v1
+      with:
+        command: fmt
+        args: --all -- --check
+
+    - name: Run cargo clippy
+      uses: actions-rs/cargo@v1
+      with:
+        command: clippy
+        args: -- -D warnings
+
