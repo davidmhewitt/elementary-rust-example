@@ -32,7 +32,24 @@ jobs:
     - name: Run tests
       run: meson test -C builddir
 
-  lints:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install stable rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        profile: minimal
+        components: rustfmt
+    - name: Run cargo fmt
+      uses: actions-rs/cargo@v1
+      with:
+        command: fmt
+        args: --all -- --check
+
+  clippy:
     runs-on: ubuntu-latest
     container:
       image: elementary/docker:stable
@@ -47,16 +64,10 @@ jobs:
       with:
         toolchain: stable
         profile: minimal
-        components: clippy, rustfmt
+        components: clippy
     - name: Generate config.rs
       run: |
         meson builddir
-    - name: Run cargo fmt
-      uses: actions-rs/cargo@v1
-      with:
-        command: fmt
-        args: --all -- --check
-
     - name: Run cargo clippy
       uses: actions-rs/cargo@v1
       with:
