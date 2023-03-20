@@ -406,9 +406,9 @@ dependencies = [
 
 [[package]]
 name = "gsk4-sys"
-version = "0.6.2"
+version = "0.6.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5a445ae1e50cbf181a1d5c61b920a7e7e8657b96e0ecdbbf8911a86fad462a32"
+checksum = "c07a84fb4dcf1323d29435aa85e2f5f58bef564342bef06775ec7bd0da1f01b0"
 dependencies = [
  "cairo-sys-rs",
  "gdk4-sys",
