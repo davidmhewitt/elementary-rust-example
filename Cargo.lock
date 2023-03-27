@@ -445,9 +445,9 @@ dependencies = [
 
 [[package]]
 name = "gtk4-macros"
-version = "0.6.3"
+version = "0.6.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "30e21acdeb9a02b8cba83e65afbb8aa45f977785e50f1113407024c6b6256988"
+checksum = "f041a797fb098bfb06e432c61738133604bfa3af57f13f1da3b9d46271422ef0"
 dependencies = [
  "anyhow",
  "proc-macro-crate",
