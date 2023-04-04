@@ -132,14 +132,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/futures-channel/futures-channel-0.3.27.crate",
-        "sha256": "164713a5a0dcc3e7b4b1ed7d3b433cabc18025386f9339346e8daf15963cf7ac",
-        "dest": "cargo/vendor/futures-channel-0.3.27"
+        "url": "https://static.crates.io/crates/futures-channel/futures-channel-0.3.28.crate",
+        "sha256": "955518d47e09b25bbebc7a18df10b81f0c766eaf4c4f1cccef2fca5f2a4fb5f2",
+        "dest": "cargo/vendor/futures-channel-0.3.28"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"164713a5a0dcc3e7b4b1ed7d3b433cabc18025386f9339346e8daf15963cf7ac\", \"files\": {}}",
-        "dest": "cargo/vendor/futures-channel-0.3.27",
+        "contents": "{\"package\": \"955518d47e09b25bbebc7a18df10b81f0c766eaf4c4f1cccef2fca5f2a4fb5f2\", \"files\": {}}",
+        "dest": "cargo/vendor/futures-channel-0.3.28",
         "dest-filename": ".cargo-checksum.json"
     },
     {
