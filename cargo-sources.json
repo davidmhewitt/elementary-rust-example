@@ -340,14 +340,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/glib-macros/glib-macros-0.17.6.crate",
-        "sha256": "32e73a9790e243f6d55d8e302426419f6084a1de7a84cd07f7268300408a19de",
-        "dest": "cargo/vendor/glib-macros-0.17.6"
+        "url": "https://static.crates.io/crates/glib-macros/glib-macros-0.17.7.crate",
+        "sha256": "bc4cf346122086f196260783aa58987190dbd5f43bfab01946d2bf9786e8d9ef",
+        "dest": "cargo/vendor/glib-macros-0.17.7"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"32e73a9790e243f6d55d8e302426419f6084a1de7a84cd07f7268300408a19de\", \"files\": {}}",
-        "dest": "cargo/vendor/glib-macros-0.17.6",
+        "contents": "{\"package\": \"bc4cf346122086f196260783aa58987190dbd5f43bfab01946d2bf9786e8d9ef\", \"files\": {}}",
+        "dest": "cargo/vendor/glib-macros-0.17.7",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -548,14 +548,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/libc/libc-0.2.140.crate",
-        "sha256": "99227334921fae1a979cf0bfdfcc6b3e5ce376ef57e16fb6fb3ea2ed6095f80c",
-        "dest": "cargo/vendor/libc-0.2.140"
+        "url": "https://static.crates.io/crates/libc/libc-0.2.141.crate",
+        "sha256": "3304a64d199bb964be99741b7a14d26972741915b3649639149b2479bb46f4b5",
+        "dest": "cargo/vendor/libc-0.2.141"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"99227334921fae1a979cf0bfdfcc6b3e5ce376ef57e16fb6fb3ea2ed6095f80c\", \"files\": {}}",
-        "dest": "cargo/vendor/libc-0.2.140",
+        "contents": "{\"package\": \"3304a64d199bb964be99741b7a14d26972741915b3649639149b2479bb46f4b5\", \"files\": {}}",
+        "dest": "cargo/vendor/libc-0.2.141",
         "dest-filename": ".cargo-checksum.json"
     },
     {
