@@ -21,6 +21,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/cache@v3
+      with:
+        path: builddir
+        key: ${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+        restore-keys: |
+          ${{ runner.os }}
     - name: Install dependencies
       run: |
         apt-get update && apt-get install -y curl xvfb
@@ -31,7 +37,7 @@ jobs:
         profile: minimal
     - name: Build
       run: |
-        meson builddir
+        meson setup --reconfigure builddir
         meson compile -C builddir
     - name: Run tests
       run: xvfb-run --auto-servernum meson test -C builddir
@@ -63,6 +69,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/cache@v3
+      with:
+        path: builddir
+        key: ${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+        restore-keys: |
+          ${{ runner.os }}
     - name: Install dependencies
       run: |
         apt-get update && apt-get install -y curl
@@ -74,7 +86,7 @@ jobs:
         components: clippy
     - name: Generate config.rs
       run: |
-        meson builddir
+        meson setup --reconfigure builddir
     - name: Run cargo clippy
       uses: actions-rs/cargo@v1
       with:
