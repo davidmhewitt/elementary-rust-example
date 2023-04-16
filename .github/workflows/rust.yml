@@ -24,9 +24,9 @@ jobs:
     - uses: actions/cache@v3
       with:
         path: ./builddir/cargo-home
-        key: ${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+        key: rust-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
         restore-keys: |
-          ${{ runner.os }}
+          rust-${{ runner.os }}
     - name: Install dependencies
       run: |
         apt-get update && apt-get install -y curl xvfb
@@ -72,9 +72,9 @@ jobs:
     - uses: actions/cache@v3
       with:
         path: ./builddir/cargo-home
-        key: ${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+        key: rust-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
         restore-keys: |
-          ${{ runner.os }}
+          rust-${{ runner.os }}
     - name: Install dependencies
       run: |
         apt-get update && apt-get install -y curl
