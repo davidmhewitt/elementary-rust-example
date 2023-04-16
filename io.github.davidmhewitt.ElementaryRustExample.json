@@ -29,7 +29,7 @@
     ],
     "modules" : [
         {
-            "name" : "elementary-rust-example",
+            "name" : "app",
             "builddir" : true,
             "buildsystem" : "meson",
             "config-opts": [ "-Doffline=true" ],
