@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
-        input: 'io.github.davidmhewitt.ElementaryRustExample.desktop.in',
-       output: 'io.github.davidmhewitt.ElementaryRustExample.desktop',
+        input: 'launcher.desktop.in',
+       output: meson.project_name() + '.desktop',
          type: 'desktop',
        po_dir: '../po/extra',
       install: true,
@@ -13,11 +13,11 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-        input: 'io.github.davidmhewitt.ElementaryRustExample.appdata.xml.in',
-       output: 'io.github.davidmhewitt.ElementaryRustExample.appdata.xml',
+        input: 'metadata.appdata.xml.in',
+       output: meson.project_name() + '.appdata.xml',
        po_dir: '../po/extra',
       install: true,
-  install_dir: join_paths(get_option('datadir'), 'appdata')
+  install_dir: join_paths(get_option('datadir'), 'metainfo')
 )
 
 appstream_util = find_program('appstreamcli', required: false)
@@ -25,8 +25,9 @@ if appstream_util.found()
   test('Validate appstream file', appstream_util, args: ['validate', appstream_file])
 endif
 
-install_data('io.github.davidmhewitt.ElementaryRustExample.gschema.xml',
-  install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
+install_data('settings.gschema.xml',
+  install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas'),
+  rename: meson.project_name() + '.gschema.xml',
 )
 
 compile_schemas = find_program('glib-compile-schemas', required: false)

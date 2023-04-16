@@ -1,4 +1,4 @@
-application_id = 'io.github.davidmhewitt.ElementaryRustExample'
+application_id = meson.project_name()
 
 # Install our icons in all the required sizes
 icon_sizes = ['16', '24', '32', '48', '64', '128']

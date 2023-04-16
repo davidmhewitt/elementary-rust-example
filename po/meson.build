@@ -1,5 +1,5 @@
 i18n.gettext(
-    'elementary-rust-example',
+    meson.project_name(),
     preset: 'glib',
     args: ['--from-code=UTF-8']
 )

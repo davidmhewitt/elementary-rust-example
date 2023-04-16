@@ -1,14 +1,14 @@
-# English translations for elementary-rust-example package.
-# Copyright (C) 2023 THE elementary-rust-example'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the elementary-rust-example package.
+# English translations for io.github.davidmhewitt.ElementaryRustExample package.
+# Copyright (C) 2023 THE io.github.davidmhewitt.ElementaryRustExample'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.davidmhewitt.ElementaryRustExample package.
 # Automatically generated, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: elementary-rust-example\n"
+"Project-Id-Version: io.github.davidmhewitt.ElementaryRustExample\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 10:30+0000\n"
-"PO-Revision-Date: 2023-02-18 15:29+0000\n"
+"POT-Creation-Date: 2023-04-16 10:51+0100\n"
+"PO-Revision-Date: 2023-04-16 10:51+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en_GB\n"
@@ -19,31 +19,28 @@ msgstr ""
 
 #: src/welcome.rs:52
 msgid "Welcome"
-msgstr ""
+msgstr "Welcome"
 
 #: src/welcome.rs:58
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: src/welcome.rs:59
 msgid "Learn more about this application"
-msgstr ""
+msgstr "Learn more about this application"
 
 #: src/welcome.rs:74
 msgid "Docs"
-msgstr ""
+msgstr "Docs"
 
 #: src/welcome.rs:75
 msgid "Rust docs for the Granite crate"
-msgstr ""
+msgstr "Rust docs for the Granite crate"
 
 #: src/window.rs:62
 msgid "Light Background"
-msgstr ""
+msgstr "Light Background"
 
 #: src/window.rs:63
 msgid "Dark Background"
-msgstr ""
-
-#~ msgid "Night"
-#~ msgstr "Night"
+msgstr "Dark Background"

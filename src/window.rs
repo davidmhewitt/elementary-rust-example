@@ -36,18 +36,18 @@ mod imp {
     use super::*;
 
     #[derive(Debug, Default)]
-    pub struct ElementaryRustExampleWindow {
+    pub struct AppWindow {
         pub settings: OnceCell<Settings>,
     }
 
     #[glib::object_subclass]
-    impl ObjectSubclass for ElementaryRustExampleWindow {
-        const NAME: &'static str = "ElementaryRustExampleWindow";
-        type Type = super::ElementaryRustExampleWindow;
+    impl ObjectSubclass for AppWindow {
+        const NAME: &'static str = "AppWindow";
+        type Type = super::AppWindow;
         type ParentType = gtk::ApplicationWindow;
     }
 
-    impl ObjectImpl for ElementaryRustExampleWindow {
+    impl ObjectImpl for AppWindow {
         fn constructed(&self) {
             self.parent_constructed();
 
@@ -79,8 +79,8 @@ mod imp {
             obj.set_child(Some(&WelcomeView::new()));
         }
     }
-    impl WidgetImpl for ElementaryRustExampleWindow {}
-    impl WindowImpl for ElementaryRustExampleWindow {
+    impl WidgetImpl for AppWindow {}
+    impl WindowImpl for AppWindow {
         fn close_request(&self) -> glib::signal::Inhibit {
             self.obj()
                 .save_window_size()
@@ -89,15 +89,16 @@ mod imp {
             self.parent_close_request()
         }
     }
-    impl ApplicationWindowImpl for ElementaryRustExampleWindow {}
+    impl ApplicationWindowImpl for AppWindow {}
 }
 
 glib::wrapper! {
-    pub struct ElementaryRustExampleWindow(ObjectSubclass<imp::ElementaryRustExampleWindow>)
-        @extends gtk::Widget, gtk::Window, gtk::ApplicationWindow,        @implements gio::ActionGroup, gio::ActionMap;
+    pub struct AppWindow(ObjectSubclass<imp::AppWindow>)
+        @extends gtk::Widget, gtk::Window, gtk::ApplicationWindow,
+        @implements gio::ActionGroup, gio::ActionMap;
 }
 
-impl ElementaryRustExampleWindow {
+impl AppWindow {
     pub fn new<P: glib::IsA<gtk::Application>>(application: &P) -> Self {
         glib::Object::builder()
             .property("application", application)

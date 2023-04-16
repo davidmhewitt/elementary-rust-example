@@ -27,7 +27,7 @@ use gtk::prelude::*;
 use gtk::subclass::prelude::*;
 use gtk::{gio, glib};
 
-use crate::ElementaryRustExampleWindow;
+use crate::AppWindow;
 
 mod imp {
     use granite::traits::SettingsExt;
@@ -36,16 +36,16 @@ mod imp {
     use super::*;
 
     #[derive(Debug, Default)]
-    pub struct ElementaryRustExampleApplication {}
+    pub struct App {}
 
     #[glib::object_subclass]
-    impl ObjectSubclass for ElementaryRustExampleApplication {
-        const NAME: &'static str = "ElementaryRustExampleApplication";
-        type Type = super::ElementaryRustExampleApplication;
+    impl ObjectSubclass for App {
+        const NAME: &'static str = "App";
+        type Type = super::App;
         type ParentType = gtk::Application;
     }
 
-    impl ObjectImpl for ElementaryRustExampleApplication {
+    impl ObjectImpl for App {
         fn constructed(&self) {
             self.parent_constructed();
             let obj = self.obj();
@@ -54,14 +54,14 @@ mod imp {
         }
     }
 
-    impl ApplicationImpl for ElementaryRustExampleApplication {
+    impl ApplicationImpl for App {
         fn activate(&self) {
             let application = self.obj();
             // Get the current window or create one if necessary
             let window = if let Some(window) = application.active_window() {
                 window
             } else {
-                let window = ElementaryRustExampleWindow::new(&*application);
+                let window = AppWindow::new(&*application);
                 window.upcast()
             };
 
@@ -89,16 +89,16 @@ mod imp {
         }
     }
 
-    impl GtkApplicationImpl for ElementaryRustExampleApplication {}
+    impl GtkApplicationImpl for App {}
 }
 
 glib::wrapper! {
-    pub struct ElementaryRustExampleApplication(ObjectSubclass<imp::ElementaryRustExampleApplication>)
+    pub struct App(ObjectSubclass<imp::App>)
         @extends gio::Application, gtk::Application,
         @implements gio::ActionGroup, gio::ActionMap;
 }
 
-impl ElementaryRustExampleApplication {
+impl App {
     pub fn new(application_id: &str, flags: &gio::ApplicationFlags) -> Self {
         glib::Object::builder()
             .property("application-id", &application_id)

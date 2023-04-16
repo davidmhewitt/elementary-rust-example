@@ -28,8 +28,8 @@ mod config;
 mod welcome;
 mod window;
 
-use self::application::ElementaryRustExampleApplication;
-use self::window::ElementaryRustExampleWindow;
+use self::application::App;
+use self::window::AppWindow;
 
 use config::{APP_ID, GETTEXT_PACKAGE, LOCALEDIR, PKGDATADIR};
 use gettextrs::{bind_textdomain_codeset, bindtextdomain, textdomain};
@@ -49,7 +49,7 @@ fn main() {
             .expect("Could not load resources");
     gio::resources_register(&resources);
 
-    let app = ElementaryRustExampleApplication::new(APP_ID, &gio::ApplicationFlags::empty());
+    let app = App::new(APP_ID, &gio::ApplicationFlags::empty());
 
     std::process::exit(app.run().value());
 }

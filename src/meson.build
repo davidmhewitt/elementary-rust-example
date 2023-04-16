@@ -1,3 +1,4 @@
+exec_name = 'elementary-rust-example'
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 gnome = import('gnome')
 
@@ -9,9 +10,9 @@ gnome.compile_resources('elementary-rust-example',
 )
 
 conf = configuration_data()
-conf.set_quoted('APP_ID', 'io.github.davidmhewitt.ElementaryRustExample')
+conf.set_quoted('APP_ID', meson.project_name())
 conf.set_quoted('VERSION', meson.project_version())
-conf.set_quoted('GETTEXT_PACKAGE', 'elementary-rust-example')
+conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 conf.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 conf.set_quoted('PKGDATADIR', pkgdatadir)
 
@@ -40,7 +41,7 @@ else
 endif
 
 if get_option('buildtype') == 'release'
-  cargo_options += [ '--release' ]
+  cargo_opt += [ '--release' ]
   rust_target = 'release'
 else
   rust_target = 'debug'
@@ -50,13 +51,13 @@ cargo_build = custom_target(
   'cargo-build',
   build_by_default: true,
   build_always_stale: true,
-  output: meson.project_name(),
+  output: exec_name,
   console: true,
   install: true,
   install_dir: get_option('bindir'),
   command: [
     'env', cargo_env,
     cargo_bin, 'build',
-    cargo_opt, '&&', 'cp', 'src' / rust_target / meson.project_name(), '@OUTPUT@',
+    cargo_opt, '&&', 'cp', 'src' / rust_target / exec_name, '@OUTPUT@',
   ]
 )
