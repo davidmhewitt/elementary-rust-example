@@ -45,7 +45,7 @@ fn main() {
 
     // Load resources
     let resources =
-        gio::Resource::load(PKGDATADIR.to_owned() + "/elementary-rust-example.gresource")
+        gio::Resource::load(PKGDATADIR.to_owned() + "/" + APP_ID + ".gresource")
             .expect("Could not load resources");
     gio::resources_register(&resources);
 

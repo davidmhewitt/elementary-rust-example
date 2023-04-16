@@ -4,8 +4,20 @@ project('io.github.davidmhewitt.ElementaryRustExample', 'rust',
   default_options: [ 'warning_level=2', 'werror=false', ],
 )
 
+exec_name = 'elementary-rust-example'
+
 i18n = import('i18n')
 gnome = import('gnome')
+
+pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
+
+conf = configuration_data()
+conf.set_quoted('APP_ID', meson.project_name())
+conf.set_quoted('SLASHED_APP_ID', '/' + meson.project_name().replace('.', '/') + '/')
+conf.set_quoted('EXEC_NAME', exec_name)
+conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
+conf.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+conf.set_quoted('PKGDATADIR', pkgdatadir)
 
 subdir('data')
 subdir('src')

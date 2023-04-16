@@ -1,20 +1,15 @@
-exec_name = 'elementary-rust-example'
-pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 gnome = import('gnome')
 
-gnome.compile_resources('elementary-rust-example',
-  'elementary-rust-example.gresource.xml',
+gnome.compile_resources(meson.project_name(),
+  configure_file(
+    input: 'resources.gresource.xml.in',
+    output: 'resources.gresource.xml',
+    configuration: conf
+  ),
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
 )
-
-conf = configuration_data()
-conf.set_quoted('APP_ID', meson.project_name())
-conf.set_quoted('VERSION', meson.project_version())
-conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
-conf.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
-conf.set_quoted('PKGDATADIR', pkgdatadir)
 
 configure_file(
     input: 'config.rs.in',

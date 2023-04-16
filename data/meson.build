@@ -25,7 +25,12 @@ if appstream_util.found()
   test('Validate appstream file', appstream_util, args: ['validate', appstream_file])
 endif
 
-install_data('settings.gschema.xml',
+install_data(
+  configure_file(
+    input: 'settings.gschema.xml.in',
+    output: 'settings.gschema.xml',
+    configuration: conf
+  ),
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas'),
   rename: meson.project_name() + '.gschema.xml',
 )
