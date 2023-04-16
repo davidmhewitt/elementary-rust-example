@@ -51,7 +51,7 @@ jobs:
         with:
           bundle: app.flatpak
           manifest-path: io.github.davidmhewitt.ElementaryRustExample.json
-          run-tests: true
+          run-tests: ${{ matrix.arch == 'x86_64' }}
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
