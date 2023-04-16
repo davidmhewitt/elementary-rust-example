@@ -56,3 +56,5 @@ cargo_build = custom_target(
     cargo_opt, '&&', 'cp', 'src' / rust_target / exec_name, '@OUTPUT@',
   ]
 )
+
+test('Run cargo test', cargo_bin, args: ['test'])
