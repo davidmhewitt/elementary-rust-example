@@ -57,4 +57,8 @@ cargo_build = custom_target(
   ]
 )
 
-test('Run cargo test', cargo_bin, args: ['test'])
+test(
+  'Run cargo test',
+  cargo_bin, args: ['test'],
+  timeout: 600
+)
