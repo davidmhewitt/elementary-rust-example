@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.davidmhewitt.ElementaryRustExample\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-16 16:38+0100\n"
+"POT-Creation-Date: 2023-04-16 19:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,24 +17,36 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/welcome.rs:52
+#: src/welcome.rs:54
 msgid "Welcome"
 msgstr ""
 
-#: src/welcome.rs:58
+#: src/welcome.rs:60
 msgid "Info"
 msgstr ""
 
-#: src/welcome.rs:59
+#: src/welcome.rs:61
 msgid "Learn more about this application"
 msgstr ""
 
-#: src/welcome.rs:74
+#: src/welcome.rs:76
 msgid "Docs"
 msgstr ""
 
-#: src/welcome.rs:75
+#: src/welcome.rs:77
 msgid "Rust docs for the Granite crate"
+msgstr ""
+
+#: src/welcome.rs:92
+msgid "Custom Icon"
+msgstr ""
+
+#: src/welcome.rs:93
+msgid "Icon from GResource"
+msgstr ""
+
+#: src/welcome.rs:99
+msgid "Filter clicked"
 msgstr ""
 
 #: src/window.rs:62
