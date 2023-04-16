@@ -69,12 +69,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/cache@v3
-      with:
-        path: ./builddir/cargo-home
-        key: rust-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
-        restore-keys: |
-          rust-${{ runner.os }}
     - name: Install dependencies
       run: |
         apt-get update && apt-get install -y curl
