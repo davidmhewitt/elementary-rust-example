@@ -1,5 +1,7 @@
 {
     "rust-analyzer.files.excludeDirs": [
-        ".flatpak-builder"
+        ".flatpak-builder",
+        "build",
+        "builddir"
     ]
 }

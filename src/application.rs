@@ -71,6 +71,8 @@ mod imp {
         fn startup(&self) {
             self.parent_startup();
 
+            granite::init();
+
             let gtk_settings =
                 gtk::Settings::default().expect("Unable to get the GtkSettings object");
             let granite_settings =

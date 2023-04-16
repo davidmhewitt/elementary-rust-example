@@ -40,8 +40,8 @@ src/elementary-rust-example
 
 To regenerate translation files (run inside the build directory):
 ```
-ninja elementary-rust-example-pot
-ninja elementary-rust-example-update-po
+ninja io.github.davidmhewitt.ElementaryRustExample-pot
+ninja io.github.davidmhewitt.ElementaryRustExample-update-po
 ninja extra-pot
 ninja extra-update-po
 ```

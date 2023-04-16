@@ -332,13 +332,11 @@ dependencies = [
 
 [[package]]
 name = "granite-rs"
-version = "0.1.0"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c61294231d5cfa53117537c0847fdd57420b3a3debbcfedc37584a807a9eac3"
+checksum = "8699d54ea52418cabbc63afc8d1092bad0f2240e9e6550f423e1b325472c5bfa"
 dependencies = [
  "bitflags",
- "cairo-rs",
- "gdk-pixbuf",
  "gdk4",
  "gio",
  "glib",
@@ -350,12 +348,10 @@ dependencies = [
 
 [[package]]
 name = "granite-rs-sys"
-version = "0.1.0"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7fcae9a629af779ffb122a59dacd48e0394031123755865078f3cf59f23938b6"
+checksum = "d1d8a4e311c094478c18a60d21166035fc849e1886fc47dada3d745fcfdc0fc2"
 dependencies = [
- "cairo-sys-rs",
- "gdk-pixbuf-sys",
  "gdk4-sys",
  "gio-sys",
  "glib-sys",
