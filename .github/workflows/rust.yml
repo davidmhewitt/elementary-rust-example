@@ -33,8 +33,7 @@ jobs:
     - uses: actions/cache@v3
       with:
         path: |
-          ./builddir/cargo-home
-          ./target
+          ./builddir
         key: rust-${{ runner.os }}-${{ steps.install-rust.outputs.rustc_hash }}-${{ hashFiles('Cargo.lock') }}
         restore-keys: |
           rust-${{ runner.os }}-${{ steps.install-rust.outputs.rustc_hash }}-
