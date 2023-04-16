@@ -1,7 +1,7 @@
 name: Update Flatpak Modules
 
 concurrency:
-  group: ${{ github.workflow }}
+  group: ${{ github.workflow }}-${{ github.event.number }}
   cancel-in-progress: true
 
 on:
