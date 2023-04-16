@@ -37,7 +37,7 @@ jobs:
         profile: minimal
     - name: Build
       run: |
-        meson setup --reconfigure builddir
+        meson setup builddir
         meson compile -C builddir
     - name: Run tests
       run: xvfb-run --auto-servernum meson test -C builddir
@@ -86,7 +86,7 @@ jobs:
         components: clippy
     - name: Generate config.rs
       run: |
-        meson setup --reconfigure builddir
+        meson setup builddir
     - name: Run cargo clippy
       uses: actions-rs/cargo@v1
       with:
