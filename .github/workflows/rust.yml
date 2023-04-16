@@ -21,20 +21,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/cache@v3
-      with:
-        path: ./builddir/cargo-home
-        key: rust-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
-        restore-keys: |
-          rust-${{ runner.os }}
     - name: Install dependencies
       run: |
         apt-get update && apt-get install -y curl xvfb
     - name: Install stable rust
+      id: install-rust
       uses: actions-rs/toolchain@v1
       with:
         toolchain: stable
         profile: minimal
+    - uses: actions/cache@v3
+      with:
+        path: |
+          ./builddir/cargo-home
+          ./target
+        key: rust-${{ runner.os }}-${{ steps.install-rust.outputs.rustc_hash }}-${{ hashFiles('Cargo.lock') }}
+        restore-keys: |
+          rust-${{ runner.os }}-${{ steps.install-rust.outputs.rustc_hash }}-
     - name: Build
       run: |
         meson setup builddir
