@@ -33,6 +33,8 @@ mod imp {
     use granite::traits::SettingsExt;
     use gtk::glib::clone;
 
+    use crate::config::SLASHED_APP_ID;
+
     use super::*;
 
     #[derive(Debug, Default)]
@@ -72,6 +74,10 @@ mod imp {
             self.parent_startup();
 
             granite::init();
+
+            let display = gtk::gdk::Display::default().expect("Couldn't get GDK display");
+            gtk::IconTheme::for_display(&display)
+                .add_resource_path(SLASHED_APP_ID);
 
             let gtk_settings =
                 gtk::Settings::default().expect("Unable to get the GtkSettings object");

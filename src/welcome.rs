@@ -30,6 +30,9 @@ use gtk::subclass::prelude::*;
 use gtk::{gio, glib};
 
 mod imp {
+    use granite::traits::ToastExt;
+    use gtk::glib::clone;
+
     use super::*;
 
     #[derive(Debug, Default)]
@@ -84,7 +87,26 @@ mod imp {
                 );
             });
 
-            obj.append(&welcome);
+            let filter_button = welcome
+                .append_button(
+                    &gio::ThemedIcon::new("filter"),
+                    &gettext("Custom Icon"),
+                    &gettext("Icon from GResource")
+                )
+                .expect("Unable to construct button in welcome view");
+
+            let toast = granite::Toast::new(&gettext("Filter clicked"));
+
+            filter_button.connect_clicked(clone!(@weak toast => move |_| {
+                toast.send_notification();
+            }));
+
+            let overlay = gtk::Overlay::builder()
+                .child(&welcome)
+                .build();
+            overlay.add_overlay(&toast);
+
+            obj.append(&overlay);
         }
     }
     impl WidgetImpl for WelcomeView {}
