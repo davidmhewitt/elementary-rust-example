@@ -1,5 +1,9 @@
 desktop_file = i18n.merge_file(
-        input: 'launcher.desktop.in',
+        input: configure_file(
+          input: 'launcher.desktop.in.in',
+          output: 'launcher.desktop.in',
+          configuration: conf
+        ),
        output: meson.project_name() + '.desktop',
          type: 'desktop',
        po_dir: '../po/extra',
@@ -13,7 +17,11 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-        input: 'metadata.appdata.xml.in',
+        input: configure_file(
+          input: 'metadata.appdata.xml.in.in',
+          output: 'metadata.appdata.xml.in',
+          configuration: conf,
+        ),
        output: meson.project_name() + '.appdata.xml',
        po_dir: '../po/extra',
       install: true,

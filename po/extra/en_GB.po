@@ -1,19 +1,15 @@
-#: data/launcher.desktop.in:3
-msgid "elementary-rust-example"
-msgstr ""
-
-#: data/metadata.appdata.xml.in:4
+#: data/launcher.desktop.in.in:3 data/metadata.appdata.xml.in.in:4
 msgid "Elementary Rust Example"
 msgstr ""
 
-#: data/metadata.appdata.xml.in:5
+#: data/metadata.appdata.xml.in.in:5
 msgid "Sample project for how to build elementary projects in Rust"
 msgstr ""
 
-#: data/metadata.appdata.xml.in:9
+#: data/metadata.appdata.xml.in.in:9
 msgid "No description"
 msgstr ""
 
-#: data/metadata.appdata.xml.in:15
+#: data/metadata.appdata.xml.in.in:15
 msgid "Initial Release"
 msgstr ""
