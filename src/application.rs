@@ -76,8 +76,7 @@ mod imp {
             granite::init();
 
             let display = gtk::gdk::Display::default().expect("Couldn't get GDK display");
-            gtk::IconTheme::for_display(&display)
-                .add_resource_path(SLASHED_APP_ID);
+            gtk::IconTheme::for_display(&display).add_resource_path(SLASHED_APP_ID);
 
             let gtk_settings =
                 gtk::Settings::default().expect("Unable to get the GtkSettings object");
