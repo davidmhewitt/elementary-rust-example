@@ -15,7 +15,7 @@
 
 This repository has all of the necessary boilerplate to build a GTK4 application against the elementary Flatpak Platform using the Granite 7 library.
 
-The example code uses the `Granite.Placeholder` widget to show a welcome screen, supports the user's dark style preference, remembers the window size and state, and sets up translations.
+The example code uses the `Granite.Placeholder` widget to show a welcome screen, supports the user's dark style preference, remembers the window size and state, uses a custom icon from a GResource file, sets up translations, and has some sample unit tests for the welcome view widget.
 
 You are free to extend upon this template in any way you see fit.
 
