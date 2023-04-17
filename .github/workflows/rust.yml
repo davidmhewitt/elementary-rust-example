@@ -27,6 +27,7 @@ jobs:
     - name: Install stable rust
       run: |
         curl https://sh.rustup.rs -sSf | sh -s -- -y
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
     - uses: actions/cache@v3
       with:
         path: |
@@ -49,6 +50,7 @@ jobs:
     - name: Install stable rust
       run: |
         curl https://sh.rustup.rs -sSf | sh -s -- -y
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
     - name: Touch empty config file
       run: |
         echo "" >> src/config.rs
@@ -69,6 +71,7 @@ jobs:
     - name: Install stable rust
       run: |
         curl https://sh.rustup.rs -sSf | sh -s -- -y
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
     - name: Generate config.rs
       run: |
         meson setup builddir
