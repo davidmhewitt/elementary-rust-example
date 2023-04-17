@@ -25,18 +25,15 @@ jobs:
       run: |
         apt-get update && apt-get install -y curl xvfb
     - name: Install stable rust
-      id: install-rust
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-        profile: minimal
+      run: |
+        curl https://sh.rustup.rs -sSf | sh -s -- -y
     - uses: actions/cache@v3
       with:
         path: |
           ./builddir
-        key: rust-${{ runner.os }}-${{ steps.install-rust.outputs.rustc_hash }}-${{ hashFiles('Cargo.lock') }}
+        key: rust-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
         restore-keys: |
-          rust-${{ runner.os }}-${{ steps.install-rust.outputs.rustc_hash }}-
+          rust-${{ runner.os }}
     - name: Build
       run: |
         meson setup builddir
@@ -50,19 +47,14 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install stable rust
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-        profile: minimal
-        components: rustfmt
+      run: |
+        curl https://sh.rustup.rs -sSf | sh -s -- -y
     - name: Touch empty config file
       run: |
         echo "" >> src/config.rs
     - name: Run cargo fmt
-      uses: actions-rs/cargo@v1
-      with:
-        command: fmt
-        args: --all -- --check
+      run: |
+        cargo fmt --all -- --check
 
   clippy:
     runs-on: ubuntu-latest
@@ -75,17 +67,12 @@ jobs:
       run: |
         apt-get update && apt-get install -y curl
     - name: Install stable rust
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-        profile: minimal
-        components: clippy
+      run: |
+        curl https://sh.rustup.rs -sSf | sh -s -- -y
     - name: Generate config.rs
       run: |
         meson setup builddir
     - name: Run cargo clippy
-      uses: actions-rs/cargo@v1
-      with:
-        command: clippy
-        args: -- -D warnings
+      run: |
+        cargo clippy -- -D warnings
 
