@@ -1,15 +1,12 @@
 name: Update Flatpak Modules
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.number }}
+  group: ${{ github.workflow }}
   cancel-in-progress: true
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
+  push:
+    branches: [ "main" ]
     paths:
       - 'Cargo.lock'
 
@@ -25,7 +22,6 @@ jobs:
     - uses: actions/checkout@v3
       with:
         path: repo
-        ref: ${{ github.event.pull_request.head.ref }}
 
     - uses: actions/checkout@v3
       with:
@@ -36,10 +32,8 @@ jobs:
       run: |
         sudo apt-get install -y python3-toml python3-aiohttp
         python3 tools/cargo/flatpak-cargo-generator.py -o repo/cargo-sources.json repo/Cargo.lock
-    - run: |
-        cd repo
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add cargo-sources.json
-        git commit -m "Update cargo-sources.json"
-        git push
+    - uses: peter-evans/create-pull-request@v5
+      with:
+        path: repo
+        commit-message: Automated update of cargo-sources.json
+        title: Automated update of cargo-sources.json
