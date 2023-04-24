@@ -108,7 +108,7 @@ glib::wrapper! {
 impl App {
     pub fn new(application_id: &str, flags: &gio::ApplicationFlags) -> Self {
         glib::Object::builder()
-            .property("application-id", &application_id)
+            .property("application-id", application_id)
             .property("flags", flags)
             .build()
     }
