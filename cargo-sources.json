@@ -379,14 +379,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/granite-rs/granite-rs-0.2.1.crate",
-        "sha256": "8699d54ea52418cabbc63afc8d1092bad0f2240e9e6550f423e1b325472c5bfa",
-        "dest": "cargo/vendor/granite-rs-0.2.1"
+        "url": "https://static.crates.io/crates/granite-rs/granite-rs-0.2.2.crate",
+        "sha256": "47d35729e671de742c3661bceaeb2b69f08206097db73784beca3bf4f0b5fb49",
+        "dest": "cargo/vendor/granite-rs-0.2.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8699d54ea52418cabbc63afc8d1092bad0f2240e9e6550f423e1b325472c5bfa\", \"files\": {}}",
-        "dest": "cargo/vendor/granite-rs-0.2.1",
+        "contents": "{\"package\": \"47d35729e671de742c3661bceaeb2b69f08206097db73784beca3bf4f0b5fb49\", \"files\": {}}",
+        "dest": "cargo/vendor/granite-rs-0.2.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
