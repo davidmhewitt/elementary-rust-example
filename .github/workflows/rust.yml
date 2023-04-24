@@ -40,7 +40,7 @@ jobs:
         meson setup builddir
         meson compile -C builddir
     - name: Run tests
-      run: xvfb-run --auto-servernum meson test -C builddir
+      run: xvfb-run --auto-servernum meson test --print-errorlogs -C builddir
 
   format:
     runs-on: ubuntu-latest
