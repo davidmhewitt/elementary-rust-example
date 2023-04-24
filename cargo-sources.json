@@ -2,14 +2,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/aho-corasick/aho-corasick-0.7.20.crate",
-        "sha256": "cc936419f96fa211c1b9166887b38e5e40b19958e5b895be7c1f93adec7071ac",
-        "dest": "cargo/vendor/aho-corasick-0.7.20"
+        "url": "https://static.crates.io/crates/aho-corasick/aho-corasick-1.0.1.crate",
+        "sha256": "67fc08ce920c31afb70f013dcce1bfc3a3195de6a228474e45e1f145b36f8d04",
+        "dest": "cargo/vendor/aho-corasick-1.0.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"cc936419f96fa211c1b9166887b38e5e40b19958e5b895be7c1f93adec7071ac\", \"files\": {}}",
-        "dest": "cargo/vendor/aho-corasick-0.7.20",
+        "contents": "{\"package\": \"67fc08ce920c31afb70f013dcce1bfc3a3195de6a228474e45e1f145b36f8d04\", \"files\": {}}",
+        "dest": "cargo/vendor/aho-corasick-1.0.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -795,27 +795,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/regex/regex-1.7.3.crate",
-        "sha256": "8b1f693b24f6ac912f4893ef08244d70b6067480d2f1a46e950c9691e6749d1d",
-        "dest": "cargo/vendor/regex-1.7.3"
+        "url": "https://static.crates.io/crates/regex/regex-1.8.1.crate",
+        "sha256": "af83e617f331cc6ae2da5443c602dfa5af81e517212d9d611a5b3ba1777b5370",
+        "dest": "cargo/vendor/regex-1.8.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8b1f693b24f6ac912f4893ef08244d70b6067480d2f1a46e950c9691e6749d1d\", \"files\": {}}",
-        "dest": "cargo/vendor/regex-1.7.3",
+        "contents": "{\"package\": \"af83e617f331cc6ae2da5443c602dfa5af81e517212d9d611a5b3ba1777b5370\", \"files\": {}}",
+        "dest": "cargo/vendor/regex-1.8.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/regex-syntax/regex-syntax-0.6.29.crate",
-        "sha256": "f162c6dd7b008981e4d40210aca20b4bd0f9b60ca9271061b07f78537722f2e1",
-        "dest": "cargo/vendor/regex-syntax-0.6.29"
+        "url": "https://static.crates.io/crates/regex-syntax/regex-syntax-0.7.1.crate",
+        "sha256": "a5996294f19bd3aae0453a862ad728f60e6600695733dd5df01da90c54363a3c",
+        "dest": "cargo/vendor/regex-syntax-0.7.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f162c6dd7b008981e4d40210aca20b4bd0f9b60ca9271061b07f78537722f2e1\", \"files\": {}}",
-        "dest": "cargo/vendor/regex-syntax-0.6.29",
+        "contents": "{\"package\": \"a5996294f19bd3aae0453a862ad728f60e6600695733dd5df01da90c54363a3c\", \"files\": {}}",
+        "dest": "cargo/vendor/regex-syntax-0.7.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
