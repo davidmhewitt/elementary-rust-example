@@ -15,14 +15,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.70.crate",
-        "sha256": "7de8ce5e0f9f8d88245311066a578d72b7af3e7088f32783804676302df237e4",
-        "dest": "cargo/vendor/anyhow-1.0.70"
+        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.71.crate",
+        "sha256": "9c7d0618f0e0b7e8ff11427422b64564d5fb0be1940354bfe2e0529b18a9d9b8",
+        "dest": "cargo/vendor/anyhow-1.0.71"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"7de8ce5e0f9f8d88245311066a578d72b7af3e7088f32783804676302df237e4\", \"files\": {}}",
-        "dest": "cargo/vendor/anyhow-1.0.70",
+        "contents": "{\"package\": \"9c7d0618f0e0b7e8ff11427422b64564d5fb0be1940354bfe2e0529b18a9d9b8\", \"files\": {}}",
+        "dest": "cargo/vendor/anyhow-1.0.71",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -938,14 +938,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/target-lexicon/target-lexicon-0.12.6.crate",
-        "sha256": "8ae9980cab1db3fceee2f6c6f643d5d8de2997c58ee8d25fb0cc8a9e9e7348e5",
-        "dest": "cargo/vendor/target-lexicon-0.12.6"
+        "url": "https://static.crates.io/crates/target-lexicon/target-lexicon-0.12.7.crate",
+        "sha256": "fd1ba337640d60c3e96bc6f0638a939b9c9a7f2c316a1598c279828b3d1dc8c5",
+        "dest": "cargo/vendor/target-lexicon-0.12.7"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8ae9980cab1db3fceee2f6c6f643d5d8de2997c58ee8d25fb0cc8a9e9e7348e5\", \"files\": {}}",
-        "dest": "cargo/vendor/target-lexicon-0.12.6",
+        "contents": "{\"package\": \"fd1ba337640d60c3e96bc6f0638a939b9c9a7f2c316a1598c279828b3d1dc8c5\", \"files\": {}}",
+        "dest": "cargo/vendor/target-lexicon-0.12.7",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1107,14 +1107,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/winnow/winnow-0.4.1.crate",
-        "sha256": "ae8970b36c66498d8ff1d66685dc86b91b29db0c7739899012f63a63814b4b28",
-        "dest": "cargo/vendor/winnow-0.4.1"
+        "url": "https://static.crates.io/crates/winnow/winnow-0.4.4.crate",
+        "sha256": "5617da7e1f97bf363947d767b91aaf3c2bbc19db7fda9c65af1278713d58e0a2",
+        "dest": "cargo/vendor/winnow-0.4.4"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"ae8970b36c66498d8ff1d66685dc86b91b29db0c7739899012f63a63814b4b28\", \"files\": {}}",
-        "dest": "cargo/vendor/winnow-0.4.1",
+        "contents": "{\"package\": \"5617da7e1f97bf363947d767b91aaf3c2bbc19db7fda9c65af1278713d58e0a2\", \"files\": {}}",
+        "dest": "cargo/vendor/winnow-0.4.4",
         "dest-filename": ".cargo-checksum.json"
     },
     {
