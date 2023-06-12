@@ -581,9 +581,9 @@ checksum = "dd8b5dd2ae5ed71462c540258bedcb51965123ad7e7ccf4b9a8cafaa4a63576d"
 
 [[package]]
 name = "pango"
-version = "0.17.4"
+version = "0.17.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "52c280b82a881e4208afb3359a8e7fde27a1b272280981f1f34610bed5770d37"
+checksum = "35be456fc620e61f62dff7ff70fbd54dcbaf0a4b920c0f16de1107c47d921d48"
 dependencies = [
  "bitflags",
  "gio",
