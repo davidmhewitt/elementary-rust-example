@@ -375,9 +375,9 @@ dependencies = [
 
 [[package]]
 name = "graphene-sys"
-version = "0.17.0"
+version = "0.17.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cf80a4849a8d9565410a8fec6fc3678e9c617f4ac7be182ca55ab75016e07af9"
+checksum = "1856fc817e6a6675e36cea0bd9a3afe296f5d9709d1e2d3182803ac77f0ab21d"
 dependencies = [
  "glib-sys",
  "libc",
