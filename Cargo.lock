@@ -349,9 +349,9 @@ dependencies = [
 
 [[package]]
 name = "granite-rs-sys"
-version = "0.2.1"
+version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d1d8a4e311c094478c18a60d21166035fc849e1886fc47dada3d745fcfdc0fc2"
+checksum = "ad9b423a185ec8de54bc3ffc78de176113b784d7121f28b4406d21c3cf366a52"
 dependencies = [
  "gdk4-sys",
  "gio-sys",
