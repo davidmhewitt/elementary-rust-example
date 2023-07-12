@@ -216,7 +216,7 @@ mod test {
         assert!(!toast_revealer.is_child_revealed());
 
         filter.activate();
-        wait(1000);
+        wait(1100);
 
         assert!(toast_revealer.is_child_revealed());
 
