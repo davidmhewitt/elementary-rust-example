@@ -20,7 +20,7 @@ jobs:
       image: ghcr.io/elementary/docker:stable
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install dependencies
       run: |
         apt-get update && apt-get install -y curl xvfb
@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install stable rust
       run: |
         rustup default stable
@@ -65,7 +65,7 @@ jobs:
       image: ghcr.io/elementary/docker:stable
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install dependencies
       run: |
         apt-get update && apt-get install -y curl
