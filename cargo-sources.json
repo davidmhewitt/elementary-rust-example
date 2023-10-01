@@ -106,14 +106,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/cfg-expr/cfg-expr-0.15.4.crate",
-        "sha256": "b40ccee03b5175c18cde8f37e7d2a33bcef6f8ec8f7cc0d81090d1bb380949c9",
-        "dest": "cargo/vendor/cfg-expr-0.15.4"
+        "url": "https://static.crates.io/crates/cfg-expr/cfg-expr-0.15.5.crate",
+        "sha256": "03915af431787e6ffdcc74c645077518c6b6e01f80b761e0fbbfa288536311b3",
+        "dest": "cargo/vendor/cfg-expr-0.15.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b40ccee03b5175c18cde8f37e7d2a33bcef6f8ec8f7cc0d81090d1bb380949c9\", \"files\": {}}",
-        "dest": "cargo/vendor/cfg-expr-0.15.4",
+        "contents": "{\"package\": \"03915af431787e6ffdcc74c645077518c6b6e01f80b761e0fbbfa288536311b3\", \"files\": {}}",
+        "dest": "cargo/vendor/cfg-expr-0.15.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -860,14 +860,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/semver/semver-1.0.18.crate",
-        "sha256": "b0293b4b29daaf487284529cc2f5675b8e57c61f70167ba415a463651fd6a918",
-        "dest": "cargo/vendor/semver-1.0.18"
+        "url": "https://static.crates.io/crates/semver/semver-1.0.19.crate",
+        "sha256": "ad977052201c6de01a8ef2aa3378c4bd23217a056337d1d6da40468d267a4fb0",
+        "dest": "cargo/vendor/semver-1.0.19"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b0293b4b29daaf487284529cc2f5675b8e57c61f70167ba415a463651fd6a918\", \"files\": {}}",
-        "dest": "cargo/vendor/semver-1.0.18",
+        "contents": "{\"package\": \"ad977052201c6de01a8ef2aa3378c4bd23217a056337d1d6da40468d267a4fb0\", \"files\": {}}",
+        "dest": "cargo/vendor/semver-1.0.19",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -912,14 +912,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/smallvec/smallvec-1.11.0.crate",
-        "sha256": "62bb4feee49fdd9f707ef802e22365a35de4b7b299de4763d44bfea899442ff9",
-        "dest": "cargo/vendor/smallvec-1.11.0"
+        "url": "https://static.crates.io/crates/smallvec/smallvec-1.11.1.crate",
+        "sha256": "942b4a808e05215192e39f4ab80813e599068285906cc91aa64f923db842bd5a",
+        "dest": "cargo/vendor/smallvec-1.11.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"62bb4feee49fdd9f707ef802e22365a35de4b7b299de4763d44bfea899442ff9\", \"files\": {}}",
-        "dest": "cargo/vendor/smallvec-1.11.0",
+        "contents": "{\"package\": \"942b4a808e05215192e39f4ab80813e599068285906cc91aa64f923db842bd5a\", \"files\": {}}",
+        "dest": "cargo/vendor/smallvec-1.11.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
