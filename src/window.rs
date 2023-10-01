@@ -81,12 +81,12 @@ mod imp {
     }
     impl WidgetImpl for AppWindow {}
     impl WindowImpl for AppWindow {
-        fn close_request(&self) -> glib::signal::Inhibit {
+        fn close_request(&self) -> glib::Propagation {
             self.obj()
                 .save_window_size()
                 .expect("Failed to save window state");
 
-            self.parent_close_request()
+            glib::Propagation::Proceed
         }
     }
     impl ApplicationWindowImpl for AppWindow {}

@@ -30,7 +30,7 @@ use gtk::{gio, glib};
 use crate::AppWindow;
 
 mod imp {
-    use granite::traits::SettingsExt;
+    use granite::prelude::SettingsExt;
     use gtk::glib::clone;
 
     use crate::config::SLASHED_APP_ID;

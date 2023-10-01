@@ -24,8 +24,7 @@
  */
 
 use gettextrs::gettext;
-use granite::traits::PlaceholderExt;
-use granite::traits::ToastExt;
+use granite::prelude::*;
 use gtk::glib::clone;
 use gtk::prelude::*;
 use gtk::subclass::prelude::*;
@@ -178,11 +177,10 @@ mod test {
 
     fn wait(ms: u32) {
         let main_loop = glib::MainLoop::new(None, false);
-        glib::timeout_add(
+        glib::timeout_add_once(
             std::time::Duration::from_millis(ms as u64),
             glib::clone!(@strong main_loop => move || {
                 main_loop.quit();
-                Continue(false)
             }),
         );
 
