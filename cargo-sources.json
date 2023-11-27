@@ -509,14 +509,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.14.2.crate",
-        "sha256": "f93e7192158dbcda357bdec5fb5788eebf8bbac027f3f33e719d29135ae84156",
-        "dest": "cargo/vendor/hashbrown-0.14.2"
+        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.14.3.crate",
+        "sha256": "290f1a1d9242c78d09ce40a5e87e7554ee637af1351968159f4952f028f75604",
+        "dest": "cargo/vendor/hashbrown-0.14.3"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f93e7192158dbcda357bdec5fb5788eebf8bbac027f3f33e719d29135ae84156\", \"files\": {}}",
-        "dest": "cargo/vendor/hashbrown-0.14.2",
+        "contents": "{\"package\": \"290f1a1d9242c78d09ce40a5e87e7554ee637af1351968159f4952f028f75604\", \"files\": {}}",
+        "dest": "cargo/vendor/hashbrown-0.14.3",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -795,14 +795,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.69.crate",
-        "sha256": "134c189feb4956b20f6f547d2cf727d4c0fe06722b20a0eec87ed445a97f92da",
-        "dest": "cargo/vendor/proc-macro2-1.0.69"
+        "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.70.crate",
+        "sha256": "39278fbbf5fb4f646ce651690877f89d1c5811a3d4acb27700c1cb3cdb78fd3b",
+        "dest": "cargo/vendor/proc-macro2-1.0.70"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"134c189feb4956b20f6f547d2cf727d4c0fe06722b20a0eec87ed445a97f92da\", \"files\": {}}",
-        "dest": "cargo/vendor/proc-macro2-1.0.69",
+        "contents": "{\"package\": \"39278fbbf5fb4f646ce651690877f89d1c5811a3d4acb27700c1cb3cdb78fd3b\", \"files\": {}}",
+        "dest": "cargo/vendor/proc-macro2-1.0.70",
         "dest-filename": ".cargo-checksum.json"
     },
     {
