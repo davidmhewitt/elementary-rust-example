@@ -1172,14 +1172,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/winnow/winnow-0.5.26.crate",
-        "sha256": "b67b5f0a4e7a27a64c651977932b9dc5667ca7fc31ac44b03ed37a0cf42fdfff",
-        "dest": "cargo/vendor/winnow-0.5.26"
+        "url": "https://static.crates.io/crates/winnow/winnow-0.5.28.crate",
+        "sha256": "6c830786f7720c2fd27a1a0e27a709dbd3c4d009b56d098fc742d4f4eab91fe2",
+        "dest": "cargo/vendor/winnow-0.5.28"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b67b5f0a4e7a27a64c651977932b9dc5667ca7fc31ac44b03ed37a0cf42fdfff\", \"files\": {}}",
-        "dest": "cargo/vendor/winnow-0.5.26",
+        "contents": "{\"package\": \"6c830786f7720c2fd27a1a0e27a709dbd3c4d009b56d098fc742d4f4eab91fe2\", \"files\": {}}",
+        "dest": "cargo/vendor/winnow-0.5.28",
         "dest-filename": ".cargo-checksum.json"
     },
     {
