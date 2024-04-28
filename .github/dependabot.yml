@@ -9,6 +9,12 @@ updates:
     allow:
       # Allow both direct and indirect updates for all packages
       - dependency-type: "all"
+    groups:
+      minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
