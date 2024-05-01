@@ -496,14 +496,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.14.3.crate",
-        "sha256": "290f1a1d9242c78d09ce40a5e87e7554ee637af1351968159f4952f028f75604",
-        "dest": "cargo/vendor/hashbrown-0.14.3"
+        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.14.5.crate",
+        "sha256": "e5274423e17b7c9fc20b6e7e208532f9b19825d82dfd615708b70edd83df41f1",
+        "dest": "cargo/vendor/hashbrown-0.14.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"290f1a1d9242c78d09ce40a5e87e7554ee637af1351968159f4952f028f75604\", \"files\": {}}",
-        "dest": "cargo/vendor/hashbrown-0.14.3",
+        "contents": "{\"package\": \"e5274423e17b7c9fc20b6e7e208532f9b19825d82dfd615708b70edd83df41f1\", \"files\": {}}",
+        "dest": "cargo/vendor/hashbrown-0.14.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
