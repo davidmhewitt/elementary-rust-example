@@ -4,5 +4,5 @@ Exec=@EXEC_NAME@
 Icon=@APP_ID_UNQUOTED@
 Terminal=false
 Type=Application
-Categories=GTK;
+Categories=Utility;GTK;
 StartupNotify=true
