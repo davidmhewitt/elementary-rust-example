@@ -32,7 +32,7 @@ jobs:
       run: |
         sudo apt-get install -y python3-toml python3-aiohttp
         python3 tools/cargo/flatpak-cargo-generator.py -o repo/cargo-sources.json repo/Cargo.lock
-    - uses: peter-evans/create-pull-request@v6
+    - uses: peter-evans/create-pull-request@v7
       with:
         path: repo
         commit-message: Automated update of cargo-sources.json
