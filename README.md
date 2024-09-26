@@ -29,8 +29,8 @@ You are free to extend upon this template in any way you see fit.
 ## 🚀 Getting started
 
 ```
-git clone https://github.com/davidmhewitt/elementary-rust-sample
-cd elementary-rust-sample
+git clone https://github.com/davidmhewitt/elementary-rust-example
+cd elementary-rust-example
 meson setup build
 cd build
 ninja

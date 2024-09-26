@@ -102,7 +102,7 @@ impl AppWindow {
     pub fn new<P: IsA<gtk::Application>>(application: &P) -> Self {
         glib::Object::builder()
             .property("application", application)
-            .property("title", "Elementary Rust Sample")
+            .property("title", "Elementary Rust Example")
             .build()
     }
 
