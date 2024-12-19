@@ -80,19 +80,21 @@ mod imp {
 
             let gtk_settings =
                 gtk::Settings::default().expect("Unable to get the GtkSettings object");
-            let granite_settings =
-                granite::Settings::default().expect("Unable to get the Granite settings object");
+            let granite_settings = granite::Settings::default();
             gtk_settings.set_gtk_application_prefer_dark_theme(
                 granite_settings.prefers_color_scheme() == granite::SettingsColorScheme::Dark,
             );
 
-            granite_settings.connect_prefers_color_scheme_notify(
-                clone!(@weak gtk_settings => move |granite_settings| {
+            granite_settings.connect_prefers_color_scheme_notify(clone!(
+                #[weak]
+                gtk_settings,
+                move |granite_settings| {
                     gtk_settings.set_gtk_application_prefer_dark_theme(
-                        granite_settings.prefers_color_scheme() == granite::SettingsColorScheme::Dark,
+                        granite_settings.prefers_color_scheme()
+                            == granite::SettingsColorScheme::Dark,
                     );
-                }),
-            );
+                }
+            ));
         }
     }
 

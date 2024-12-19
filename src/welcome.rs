@@ -53,13 +53,11 @@ mod imp {
                 .title(gettext("Welcome"))
                 .build();
 
-            let source_button = welcome
-                .append_button(
-                    &gio::ThemedIcon::new("applications-development"),
-                    &gettext("Info"),
-                    &gettext("Learn more about this application"),
-                )
-                .expect("Unable to construct button in welcome view");
+            let source_button = welcome.append_button(
+                &gio::ThemedIcon::new("applications-development"),
+                &gettext("Info"),
+                &gettext("Learn more about this application"),
+            );
 
             source_button.connect_clicked(|_| {
                 gtk::show_uri(
@@ -69,13 +67,11 @@ mod imp {
                 );
             });
 
-            let docs_button = welcome
-                .append_button(
-                    &gio::ThemedIcon::new("help-contents"),
-                    &gettext("Docs"),
-                    &gettext("Rust docs for the Granite crate"),
-                )
-                .expect("Unable to construct button in welcome view");
+            let docs_button = welcome.append_button(
+                &gio::ThemedIcon::new("help-contents"),
+                &gettext("Docs"),
+                &gettext("Rust docs for the Granite crate"),
+            );
 
             docs_button.connect_clicked(|_| {
                 gtk::show_uri(
@@ -85,22 +81,24 @@ mod imp {
                 );
             });
 
-            let filter_button = welcome
-                .append_button(
-                    &gio::ThemedIcon::new("filter"),
-                    &gettext("Custom Icon"),
-                    &gettext("Icon from GResource"),
-                )
-                .expect("Unable to construct button in welcome view");
+            let filter_button = welcome.append_button(
+                &gio::ThemedIcon::new("filter"),
+                &gettext("Custom Icon"),
+                &gettext("Icon from GResource"),
+            );
 
             filter_button.set_widget_name("filter-button");
 
             let toast = granite::Toast::new(&gettext("Filter clicked"));
             toast.set_widget_name("toast");
 
-            filter_button.connect_clicked(clone!(@weak toast => move |_| {
-                toast.send_notification();
-            }));
+            filter_button.connect_clicked(clone!(
+                #[weak]
+                toast,
+                move |_| {
+                    toast.send_notification();
+                }
+            ));
 
             let overlay = gtk::Overlay::builder().child(&welcome).build();
             overlay.add_overlay(&toast);
