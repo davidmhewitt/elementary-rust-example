@@ -177,9 +177,13 @@ mod test {
         let main_loop = glib::MainLoop::new(None, false);
         glib::timeout_add_once(
             std::time::Duration::from_millis(ms as u64),
-            glib::clone!(@strong main_loop => move || {
-                main_loop.quit();
-            }),
+            glib::clone!(
+                #[strong]
+                main_loop,
+                move || {
+                    main_loop.quit();
+                }
+            ),
         );
 
         main_loop.run();
