@@ -21,6 +21,7 @@ You are free to extend upon this template in any way you see fit.
 
 ## 🛠️ Requirements
 
+* gettext
 * meson
 * libgranite-7-dev
 * libgtk-4-dev
